@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.createcontactwithbaseclass.TC_05createcontactswithbase">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closebrowser"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofapp"/>
+          <include name="closeDB"/>
+          <include name="connectDB"/>
+          <include name="createContact"/>
+        </methods>
+      </class> <!-- com.createcontactwithbaseclass.TC_05createcontactswithbase -->
+      <class name="com.createcontactwithbaseclass.TC_04createcontactsbaseclass">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closebrowser"/>
+          <include name="launchBrowser"/>
+          <include name="createContact"/>
+          <include name="logoutofapp"/>
+          <include name="closeDB"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- com.createcontactwithbaseclass.TC_04createcontactsbaseclass -->
+      <class name="com.createcontactwithbaseclass.TC_03createcontactwithbaseclass">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closebrowser"/>
+          <include name="createContact"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofapp"/>
+          <include name="closeDB"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- com.createcontactwithbaseclass.TC_03createcontactwithbaseclass -->
+      <class name="com.createcontactwithbaseclass.TC_01createcontact">
+        <methods>
+          <include name="createContact"/>
+          <include name="loginToApp"/>
+          <include name="closebrowser"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofapp"/>
+          <include name="closeDB"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- com.createcontactwithbaseclass.TC_01createcontact -->
+      <class name="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass">
+        <methods>
+          <include name="createContact"/>
+          <include name="loginToApp"/>
+          <include name="closebrowser"/>
+          <include name="launchBrowser"/>
+          <include name="logoutofapp"/>
+          <include name="closeDB"/>
+          <include name="connectDB"/>
+        </methods>
+      </class> <!-- com.createcontactwithbaseclass.TC_02createcontactswithbaseclass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
