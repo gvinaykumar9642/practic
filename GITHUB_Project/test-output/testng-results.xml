@@ -1,107 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="13" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="144510" started-at="2021-11-06T12:26:47 IST" finished-at="2021-11-06T12:29:12 IST">
+  <suite name="Suite" duration-ms="90066" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:27:18 IST">
     <groups>
       <group name="smoketest">
-        <method signature="TC_01createcontact.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@23fe1d71]" name="createContact" class="com.createcontactwithbaseclass.TC_01createcontact"/>
-        <method signature="TC_02createcontactswithbaseclass.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@28ac3dc3]" name="createContact" class="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass"/>
-        <method signature="TC_03createcontactwithbaseclass.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="createContact" class="com.createcontactwithbaseclass.TC_03createcontactwithbaseclass"/>
-        <method signature="TC_04createcontactsbaseclass.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_04createcontactsbaseclass@8e24743]" name="createContact" class="com.createcontactwithbaseclass.TC_04createcontactsbaseclass"/>
-        <method signature="TC_05createcontactswithbase.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_05createcontactswithbase@32eebfca]" name="createContact" class="com.createcontactwithbaseclass.TC_05createcontactswithbase"/>
+        <method signature="TC_01createcontact.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@192d3247]" name="createContact" class="com.createcontactwithbaseclass.TC_01createcontact"/>
+        <method signature="TC_02createcontactswithbaseclass.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@10a035a0]" name="createContact" class="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass"/>
+        <method signature="TC_03createcontactwithbaseclass.createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="createContact" class="com.createcontactwithbaseclass.TC_03createcontactwithbaseclass"/>
       </group> <!-- smoketest -->
     </groups>
-    <test name="Test" duration-ms="144510" started-at="2021-11-06T12:26:47 IST" finished-at="2021-11-06T12:29:12 IST">
-      <class name="com.createcontactwithbaseclass.TC_05createcontactswithbase">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_05createcontactswithbase@32eebfca]" name="launchBrowser" is-config="true" duration-ms="5429" started-at="2021-11-06T12:28:36 IST" finished-at="2021-11-06T12:28:41 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_05createcontactswithbase@32eebfca]" name="loginToApp" is-config="true" duration-ms="7589" started-at="2021-11-06T12:28:41 IST" finished-at="2021-11-06T12:28:49 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_05createcontactswithbase@32eebfca]" name="createContact" duration-ms="20520" started-at="2021-11-06T12:28:49 IST" finished-at="2021-11-06T12:29:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_05createcontactswithbase@32eebfca]" name="logoutofapp" is-config="true" duration-ms="2374" started-at="2021-11-06T12:29:09 IST" finished-at="2021-11-06T12:29:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofapp -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_05createcontactswithbase@32eebfca]" name="closebrowser" is-config="true" duration-ms="215" started-at="2021-11-06T12:29:12 IST" finished-at="2021-11-06T12:29:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- com.createcontactwithbaseclass.TC_05createcontactswithbase -->
-      <class name="com.createcontactwithbaseclass.TC_04createcontactsbaseclass">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_04createcontactsbaseclass@8e24743]" name="launchBrowser" is-config="true" duration-ms="3401" started-at="2021-11-06T12:27:23 IST" finished-at="2021-11-06T12:27:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_04createcontactsbaseclass@8e24743]" name="loginToApp" is-config="true" duration-ms="6575" started-at="2021-11-06T12:27:27 IST" finished-at="2021-11-06T12:27:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_04createcontactsbaseclass@8e24743]" name="createContact" duration-ms="10568" started-at="2021-11-06T12:27:33 IST" finished-at="2021-11-06T12:27:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_04createcontactsbaseclass@8e24743]" name="logoutofapp" is-config="true" duration-ms="2595" started-at="2021-11-06T12:27:44 IST" finished-at="2021-11-06T12:27:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofapp -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_04createcontactsbaseclass@8e24743]" name="closebrowser" is-config="true" duration-ms="386" started-at="2021-11-06T12:27:46 IST" finished-at="2021-11-06T12:27:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- com.createcontactwithbaseclass.TC_04createcontactsbaseclass -->
-      <class name="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@28ac3dc3]" name="launchBrowser" is-config="true" duration-ms="3818" started-at="2021-11-06T12:28:09 IST" finished-at="2021-11-06T12:28:12 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@28ac3dc3]" name="loginToApp" is-config="true" duration-ms="6739" started-at="2021-11-06T12:28:12 IST" finished-at="2021-11-06T12:28:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@28ac3dc3]" name="createContact" duration-ms="14348" started-at="2021-11-06T12:28:19 IST" finished-at="2021-11-06T12:28:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@28ac3dc3]" name="logoutofapp" is-config="true" duration-ms="2093" started-at="2021-11-06T12:28:33 IST" finished-at="2021-11-06T12:28:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutofapp -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@28ac3dc3]" name="closebrowser" is-config="true" duration-ms="127" started-at="2021-11-06T12:28:36 IST" finished-at="2021-11-06T12:28:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- com.createcontactwithbaseclass.TC_02createcontactswithbaseclass -->
+    <test name="Test1" duration-ms="65959" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:26:54 IST">
       <class name="com.createcontactwithbaseclass.TC_01createcontact">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@23fe1d71]" name="launchBrowser" is-config="true" duration-ms="4240" started-at="2021-11-06T12:27:47 IST" finished-at="2021-11-06T12:27:51 IST">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@192d3247]" name="launchBrowser" is-config="true" duration-ms="9941" started-at="2021-11-06T13:25:49 IST" finished-at="2021-11-06T13:25:59 IST">
           <params>
             <param index="0">
               <value>
@@ -112,29 +23,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@23fe1d71]" name="loginToApp" is-config="true" duration-ms="6579" started-at="2021-11-06T12:27:51 IST" finished-at="2021-11-06T12:27:58 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@192d3247]" name="loginToApp" is-config="true" duration-ms="16694" started-at="2021-11-06T13:25:59 IST" finished-at="2021-11-06T13:26:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@23fe1d71]" name="createContact" duration-ms="8807" started-at="2021-11-06T12:27:58 IST" finished-at="2021-11-06T12:28:06 IST">
+        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@192d3247]" name="createContact" duration-ms="28179" started-at="2021-11-06T13:26:16 IST" finished-at="2021-11-06T13:26:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@23fe1d71]" name="logoutofapp" is-config="true" duration-ms="2029" started-at="2021-11-06T12:28:06 IST" finished-at="2021-11-06T12:28:08 IST">
+        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@192d3247]" name="logoutofapp" is-config="true" duration-ms="7715" started-at="2021-11-06T13:26:44 IST" finished-at="2021-11-06T13:26:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutofapp -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@23fe1d71]" name="closebrowser" is-config="true" duration-ms="163" started-at="2021-11-06T12:28:08 IST" finished-at="2021-11-06T12:28:09 IST">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_01createcontact@192d3247]" name="closebrowser" is-config="true" duration-ms="2595" started-at="2021-11-06T13:26:52 IST" finished-at="2021-11-06T13:26:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
       </class> <!-- com.createcontactwithbaseclass.TC_01createcontact -->
+    </test> <!-- Test1 -->
+    <test name="Test3" duration-ms="89471" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:27:18 IST">
       <class name="com.createcontactwithbaseclass.TC_03createcontactwithbaseclass">
-        <test-method status="PASS" signature="connectDB()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="connectDB" is-config="true" duration-ms="19" started-at="2021-11-06T12:26:47 IST" finished-at="2021-11-06T12:26:47 IST">
+        <test-method status="PASS" signature="connectDB()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="connectDB" is-config="true" duration-ms="15" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:25:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectDB -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="launchBrowser" is-config="true" duration-ms="6575" started-at="2021-11-06T12:26:48 IST" finished-at="2021-11-06T12:26:54 IST">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="launchBrowser" is-config="true" duration-ms="10232" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:25:59 IST">
           <params>
             <param index="0">
               <value>
@@ -145,27 +58,58 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="loginToApp" is-config="true" duration-ms="6720" started-at="2021-11-06T12:26:54 IST" finished-at="2021-11-06T12:27:01 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="loginToApp" is-config="true" duration-ms="21932" started-at="2021-11-06T13:25:59 IST" finished-at="2021-11-06T13:26:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="createContact" duration-ms="19551" started-at="2021-11-06T12:27:01 IST" finished-at="2021-11-06T12:27:21 IST">
+        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="createContact" duration-ms="54475" started-at="2021-11-06T13:26:20 IST" finished-at="2021-11-06T13:27:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="logoutofapp" is-config="true" duration-ms="2387" started-at="2021-11-06T12:27:21 IST" finished-at="2021-11-06T12:27:23 IST">
+        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="logoutofapp" is-config="true" duration-ms="2412" started-at="2021-11-06T13:27:15 IST" finished-at="2021-11-06T13:27:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutofapp -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="closebrowser" is-config="true" duration-ms="126" started-at="2021-11-06T12:27:23 IST" finished-at="2021-11-06T12:27:23 IST">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="closebrowser" is-config="true" duration-ms="380" started-at="2021-11-06T13:27:17 IST" finished-at="2021-11-06T13:27:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closeDB()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@43bd930a]" name="closeDB" is-config="true" duration-ms="4" started-at="2021-11-06T12:29:13 IST" finished-at="2021-11-06T12:29:13 IST">
+        <test-method status="PASS" signature="closeDB()[pri:0, instance:com.createcontactwithbaseclass.TC_03createcontactwithbaseclass@149494d8]" name="closeDB" is-config="true" duration-ms="1" started-at="2021-11-06T13:27:18 IST" finished-at="2021-11-06T13:27:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
       </class> <!-- com.createcontactwithbaseclass.TC_03createcontactwithbaseclass -->
-    </test> <!-- Test -->
+    </test> <!-- Test3 -->
+    <test name="Test2" duration-ms="90066" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:27:18 IST">
+      <class name="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@10a035a0]" name="launchBrowser" is-config="true" duration-ms="10203" started-at="2021-11-06T13:25:48 IST" finished-at="2021-11-06T13:25:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@10a035a0]" name="loginToApp" is-config="true" duration-ms="16528" started-at="2021-11-06T13:25:59 IST" finished-at="2021-11-06T13:26:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method status="PASS" signature="createContact()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@10a035a0]" name="createContact" duration-ms="54986" started-at="2021-11-06T13:26:15 IST" finished-at="2021-11-06T13:27:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method status="PASS" signature="logoutofapp()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@10a035a0]" name="logoutofapp" is-config="true" duration-ms="8104" started-at="2021-11-06T13:27:10 IST" finished-at="2021-11-06T13:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutofapp -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.createcontactwithbaseclass.TC_02createcontactswithbaseclass@10a035a0]" name="closebrowser" is-config="true" duration-ms="174" started-at="2021-11-06T13:27:18 IST" finished-at="2021-11-06T13:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.createcontactwithbaseclass.TC_02createcontactswithbaseclass -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

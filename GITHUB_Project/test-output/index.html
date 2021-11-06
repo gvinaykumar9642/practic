@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\vinay\Desktop\v\GITHUB_Project\Batch_testng.xml</span>
+                    <span>C:\Users\vinay\git\repository4\GITHUB_Project\Distributed_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,22 +109,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.createcontactwithbaseclass.TC_05createcontactswithbase" hash-for-method="createContact">createContact</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass" hash-for-method="createContact">createContact</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.createcontactwithbaseclass.TC_03createcontactwithbaseclass" hash-for-method="createContact">createContact</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.createcontactwithbaseclass.TC_04createcontactsbaseclass" hash-for-method="createContact">createContact</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.createcontactwithbaseclass.TC_02createcontactswithbaseclass" hash-for-method="createContact">createContact</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -142,22 +132,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.createcontactwithbaseclass.TC_05createcontactswithbase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createContact">
-                  </a> <!-- createContact -->
-                  <span class="method-name">createContact</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.createcontactwithbaseclass.TC_04createcontactsbaseclass</span>
+              <span class="class-name">com.createcontactwithbaseclass.TC_01createcontact</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -187,21 +162,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.createcontactwithbaseclass.TC_01createcontact</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createContact">
-                  </a> <!-- createContact -->
-                  <span class="method-name">createContact</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -217,22 +177,28 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vinay\Desktop\v\GITHUB_Project\Batch_testng.xml</span>
+            <span class="header-content">C:\Users\vinay\git\repository4\GITHUB_Project\Distributed_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.createcontactwithbaseclass.TC_01createcontact&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.createcontactwithbaseclass.TC_02createcontactswithbaseclass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test3&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.createcontactwithbaseclass.TC_03createcontactwithbaseclass&quot;/&gt;
-      &lt;class name=&quot;com.createcontactwithbaseclass.TC_04createcontactsbaseclass&quot;/&gt;
-      &lt;class name=&quot;com.createcontactwithbaseclass.TC_01createcontact&quot;/&gt;
-      &lt;class name=&quot;com.createcontactwithbaseclass.TC_02createcontactswithbaseclass&quot;/&gt;
-      &lt;class name=&quot;com.createcontactwithbaseclass.TC_05createcontactswithbase&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,7 +210,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -278,27 +250,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createContact')
-data.setCell(0, 2, 'com.createcontactwithbaseclass.TC_05createcontactswithbase')
-data.setCell(0, 3, 20520);
+data.setCell(0, 2, 'com.createcontactwithbaseclass.TC_02createcontactswithbaseclass')
+data.setCell(0, 3, 54986);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createContact')
 data.setCell(1, 2, 'com.createcontactwithbaseclass.TC_03createcontactwithbaseclass')
-data.setCell(1, 3, 19551);
+data.setCell(1, 3, 54475);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createContact')
-data.setCell(2, 2, 'com.createcontactwithbaseclass.TC_02createcontactswithbaseclass')
-data.setCell(2, 3, 14348);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createContact')
-data.setCell(3, 2, 'com.createcontactwithbaseclass.TC_04createcontactsbaseclass')
-data.setCell(3, 3, 10568);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createContact')
-data.setCell(4, 2, 'com.createcontactwithbaseclass.TC_01createcontact')
-data.setCell(4, 3, 8807);
+data.setCell(2, 2, 'com.createcontactwithbaseclass.TC_01createcontact')
+data.setCell(2, 3, 28179);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -318,45 +282,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.createcontactwithbaseclass.TC_05createcontactswithbase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-                <span class="ignored-method-name">connectDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.createcontactwithbaseclass.TC_04createcontactsbaseclass</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-                <span class="ignored-method-name">connectDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.createcontactwithbaseclass.TC_01createcontact</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-                <span class="ignored-method-name">connectDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">closeDB</span>
-                <br/>
-                <span class="ignored-method-name">connectDB</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -372,122 +300,106 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">506 ms</span>
+                <span class="method-start">64 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApp</span>
-                <span class="method-start">7108 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createContact</span>
-                <span class="method-start">13829 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutofapp</span>
-                <span class="method-start">33394 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">35785 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_04createcontactsbaseclass</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">35913 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApp</span>
-                <span class="method-start">39314 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createContact</span>
-                <span class="method-start">45889 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutofapp</span>
-                <span class="method-start">56461 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">59056 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_01createcontact</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">59442 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApp</span>
-                <span class="method-start">63683 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createContact</span>
-                <span class="method-start">70262 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutofapp</span>
-                <span class="method-start">79074 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">81104 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">81268 ms</span>
+                <span class="method-start">65 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_01createcontact</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser(chrome)</span>
+                <span class="method-start">822 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">85089 ms</span>
+                <span class="method-start">10296 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_03createcontactwithbaseclass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp</span>
+                <span class="method-start">10297 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_01createcontact</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp</span>
+                <span class="method-start">10765 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createContact</span>
-                <span class="method-start">91828 ms</span>
+                <span class="method-start">26825 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_01createcontact</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createContact</span>
+                <span class="method-start">27459 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_03createcontactwithbaseclass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createContact</span>
+                <span class="method-start">32229 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_01createcontact</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">logoutofapp</span>
-                <span class="method-start">106178 ms</span>
+                <span class="method-start">55666 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">108271 ms</span>
+                <span class="method-start">63384 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_05createcontactswithbase</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">108398 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">loginToApp</span>
-                <span class="method-start">113828 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createContact</span>
-                <span class="method-start">121417 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">logoutofapp</span>
-                <span class="method-start">141940 ms</span>
+                <span class="method-start">81815 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_03createcontactwithbaseclass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutofapp</span>
+                <span class="method-start">86705 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">144314 ms</span>
+                <span class="method-start">89118 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.createcontactwithbaseclass.TC_02createcontactswithbaseclass</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">89919 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.createcontactwithbaseclass.TC_03createcontactwithbaseclass</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeDB</span>
-                <span class="method-start">145733 ms</span>
+                <span class="method-start">90106 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
