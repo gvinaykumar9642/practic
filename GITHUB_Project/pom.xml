@@ -5,12 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.1.0</version>
+    <version>7.4.0</version>
     <scope>test</scope>
 </dependency>
+
 
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -62,12 +64,84 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.8</version>
 </dependency>
-  
-  
-  
-  
-  
-  
-  
   </dependencies>
+  <build>
+  <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>Batch_testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+</build>
+<profiles>
+	<profile>
+		<id>crs</id>
+			<build>
+  		<plugins>
+    
+      	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>CrossBrowser_testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+</build>
+</profile>
+
+	<profile>
+		<id>dts</id>
+			<build>
+  		<plugins>
+    
+      	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>Distributed_testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+</build>
+</profile>
+<profile>
+		<id>bts</id>
+			<build>
+  		<plugins>
+    
+      	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>Batch_testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+</build>
+</profile>
+
+
+
+</profiles>
 </project>
