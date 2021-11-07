@@ -11,7 +11,9 @@ public class jp_01_reverseString {
 		{
 			rev=rev+s.charAt(i);
 		}
-  System.out.println(rev);
+  System.out.println("Reverse String is "+rev);
+  System.out.println("Vinay Kumar");
+  
 
 	}
 
